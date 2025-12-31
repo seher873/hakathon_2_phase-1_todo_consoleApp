@@ -56,3 +56,4 @@ This project is designed with modularity in mind to support future phases, inclu
 ---
 🤖 Generated with [Claude Code](https://claude.com)
 # hakathon_2_phase-1_todo_consoleApp
+python3 src/cli/main.py

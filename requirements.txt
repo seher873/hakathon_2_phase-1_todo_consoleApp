@@ -1,0 +1,7 @@
+# Core Requirements
+# This project primarily uses the Python standard library
+# Compatible with Python 3.8+
+
+# Development Dependencies
+autopep8>=2.0.0
+pycodestyle>=2.10.0

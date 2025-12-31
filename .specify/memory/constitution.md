@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Constitution: Phase 1 - Hackathon II "Evolution of Todo"
 
-## Core Principles
+## Overview
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+This document defines the foundational principles for Phase 1 of the Hackathon II "Evolution of Todo" project. The goal is to build a command-line application to manage todo tasks in memory using Python. This Phase 1 implementation will serve as the foundation for future evolution to full-stack and cloud-native applications in subsequent phases.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+## Principles
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+- **Clean Code**: Write maintainable, readable, and well-documented code following Python best practices (PEP 8)
+- **Modularity**: Design components with clear separation of concerns to enable future extensibility
+- **Error Handling**: Implement robust error handling to provide a smooth user experience
+- **User-Friendly Interface**: Create an intuitive menu system that allows users to easily manage their tasks
+- **Agentic Development**: Follow the Spec-Kit Plus methodology: Specs → Plan → Tasks → Implementation
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+## Features
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Basic Level Functionality:
+- **Add Task**: Create new tasks with title and description
+- **Delete Task**: Remove tasks by unique ID
+- **Update Task**: Modify task details (title, description, status)
+- **View Tasks**: Display a list of all tasks with their current status
+- **Mark Complete/Incomplete**: Toggle task completion status
 
-### [PRINCIPLE_6_NAME]
+## Constraints
 
+- **In-Memory Storage**: Data persistence is limited to application runtime (using Python lists/dictionaries only)
+- **Single-User Focus**: Application designed for individual use without multi-user considerations
+- **Command-Line Interface**: No GUI implementation required for Phase 1
+- **Agentic Dev Stack**: Implementation must follow the Specs → Plan → Tasks → qwen cli generation workflow
+- **Python-Only**: Implementation restricted to Python standard library (no external dependencies)
 
-[PRINCIPLE__DESCRIPTION]
+## Future Evolution
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+This Phase 1 foundation will evolve in subsequent phases:
+- Phase 2: Introduction of persistent storage (file-based or database)
+- Phase 3: Web-based GUI implementation
+- Phase 4: Cloud-native deployment with multi-user support
+- Phase 5: Advanced features like task categorization, due dates, and notifications
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Security and Ethics
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
-
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
-
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+- **No Real Data Storage**: Since data is in-memory only, no personal data will be persistently stored
+- **Single-User Application**: No authentication or authorization required for Phase 1
+- **Privacy by Design**: No external data transmission or cloud storage in Phase 1
+- **Ethical Use**: Application designed solely for task management without data collection
